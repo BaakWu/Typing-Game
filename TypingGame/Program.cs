@@ -16,7 +16,11 @@ namespace TypingGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            WordDictionary wordDic = new WordDictionary();
             Application.Run(new typingTest());
+
+            
+
         }
     }
 }

@@ -91,6 +91,7 @@
             this.mistakeTag.TabIndex = 5;
             this.mistakeTag.Text = "There is a Mistake!";
             this.mistakeTag.Visible = false;
+            this.mistakeTag.Click += new System.EventHandler(this.mistakeTag_Click);
             // 
             // typingTest
             // 

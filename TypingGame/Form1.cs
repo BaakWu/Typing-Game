@@ -43,6 +43,16 @@ namespace TypingGame
             }
         }
 
+        private void mistakeTag_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
     }
 
 }
