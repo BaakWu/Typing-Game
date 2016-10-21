@@ -69,6 +69,7 @@
             this.inputBox.Name = "inputBox";
             this.inputBox.Size = new System.Drawing.Size(209, 20);
             this.inputBox.TabIndex = 3;
+            this.inputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.inputBox.TextChanged += new System.EventHandler(this.inputBox_TextChanged);
             this.inputBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputBox_KeyPress);
             // 
@@ -91,7 +92,6 @@
             this.mistakeTag.TabIndex = 5;
             this.mistakeTag.Text = "There is a Mistake!";
             this.mistakeTag.Visible = false;
-            this.mistakeTag.Click += new System.EventHandler(this.mistakeTag_Click);
             // 
             // typingTest
             // 
