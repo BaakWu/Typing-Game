@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.helpLabel = new System.Windows.Forms.Label();
             this.wpmLabel = new System.Windows.Forms.Label();
             this.typeThis = new System.Windows.Forms.Label();
             this.inputBox = new System.Windows.Forms.TextBox();
             this.wpmCounter = new System.Windows.Forms.Label();
             this.mistakeTag = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // helpLabel
@@ -93,6 +95,11 @@
             this.mistakeTag.Text = "There is a Mistake!";
             this.mistakeTag.Visible = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // typingTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,7 +112,7 @@
             this.Controls.Add(this.wpmLabel);
             this.Controls.Add(this.helpLabel);
             this.Name = "typingTest";
-            this.Text = "Typing Test";
+            this.Text = "e";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,6 +127,7 @@
         private System.Windows.Forms.TextBox inputBox;
         private System.Windows.Forms.Label wpmCounter;
         private System.Windows.Forms.Label mistakeTag;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

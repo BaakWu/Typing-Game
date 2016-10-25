@@ -13,12 +13,12 @@ namespace TypingGame
     public partial class typingTest : Form
     {
         WordDictionary wordDic; // word dictionary object used in the UI
-
-        public typingTest(WordDictionary source) //constructor that requires the word dictionary
+        wordPerMinute wpm;
+        public typingTest(WordDictionary source, wordPerMinute source2) //constructor that requires the word dictionary
         {
             wordDic = source;
+            wpm = source2;
             InitializeComponent();
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -52,14 +52,19 @@ namespace TypingGame
                 typeThis.Text = wordDic.ShowrandomWord();
                 inputBox.Text = null;
 
+                timer1.Enabled = true;
+                wpm.addWords();
+
             }
         }
 
 
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
-
+           // MessageBox.Show( wpm.getWPM().ToString();
+            wpm.addSeconds();
+            wpmLabel.Text = wpm.getWPM().ToString();
         }
 
     }

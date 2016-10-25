@@ -17,7 +17,9 @@ namespace TypingGame
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             WordDictionary wordDic = new WordDictionary();
-            Application.Run(new typingTest(wordDic));
+            wordPerMinute wpm = new wordPerMinute();
+
+            Application.Run(new typingTest(wordDic, wpm));
 
             
 

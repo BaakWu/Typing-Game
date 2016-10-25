@@ -11,8 +11,8 @@ namespace TypingGame
     public class WordDictionary
     {
         private string[] words = null; //array of words to loaded with words
-        Random rnd1 = new Random(); // random number generator to get random words
-        int numWords; //number of words in array
+        private Random rnd1 = new Random(); // random number generator to get random words
+        private int numWords; //number of words in array
         public WordDictionary()
         {
             string wordFile = File.ReadAllText(@"C:\Users\AlanWongDesk\Documents\Visual Studio 2013\Projects\TypingGame\TypingGame\wordDic.csv", Encoding.UTF8); // pulls words from CSV dictionary
